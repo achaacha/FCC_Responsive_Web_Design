@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CatPhotoApp</title>
+    <!--Extra HTML not in Responsive Web Exercise-->
+    <link rel='stylesheet' type='text/css' href='style.css' />
+    <script type='text/javascript' src='lib.js'></script>
+    <!--End of extra code-->
+  </head>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <!--Extra HTML not in Responsive Web Exercise-->
+      <button class="btn right">
+        <div class="icon-container">
+          <svg class="icon right">
+            <use xlink:href="#right"></use>
+          </svg>
+        </div>
+      </button>
+
+      <button class="btn left">
+        <div class="icon-container">
+          <svg class="icon left">
+            <use xlink:href="#left"></use>
+          </svg>
+        </div>
+      </button>
+      <!--End of extra code-->
+      <section>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>Click here to view more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>.</p>
+        <a href="https://freecatphotoapp.com"><img src="img/dancing-cat-gif.gif" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <div class="container">
+            <h3>Things cats love:</h3>
+            <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+            </ul>
+            <figure>
+            <img src="img/lilbub-happy.png" alt="A slice of lasagna on a plate.">
+            <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+            </figure>
+        </div>
+
+        <div class="container">
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+            </ol>
+            <figure>
+            <img src="img/sad-meow.png" alt="Five cats looking around a field.">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+            </figure>
+        </div>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <!--Extra HTML not in Responsive Web Exercise-->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icons">
+      <symbol id="right" viewBox="0 0 448 512">
+        <path
+            d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+      </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="icons">
+      <symbol id="left" viewBox="0 0 448 512">
+          <!-- Scale use the origin of the coordinate system. 
+            If you want to scale it in the center of the Image, 
+            you have to translate middle of the Image to the origin, 
+            then scale, then translate back: 
+            
+            PositionOfImageX + WidthOfImage / 2-->
+          <path transform="translate(224,0) scale(-1,1) translate(-224,0)"
+              d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+      </symbol>
+    </svg>
+    <!--End of extra code-->
+    <footer>
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+    <!--Extra HTML not in Responsive Web Exercise-->
+    <script type='text/javascript' src='index.js'></script>
+    <!--End of extra code-->
+  </body>
+</html>
