@@ -1,4 +1,4 @@
-# FCC_Responsive_Web_Design
+# FCC Responsive Web Design
 
 Just stuff from Responsive Web Design section on FreeCodeCamp, most probably will include my own twists for extra practice. 
 
