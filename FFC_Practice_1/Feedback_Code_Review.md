@@ -5,7 +5,7 @@
 Awesome! This looks great! 
 You **can count it as 5 code reviews after this refactor!** 
 
-**My review will focus on how to make code readable in a company setting, so please keep that in mind.**
+*My review will focus on how to make code readable in a company setting, so please keep that in mind.*
 
 ### index.html:
 
@@ -20,7 +20,8 @@ You **can count it as 5 code reviews after this refactor!**
   // stylings specific to the right btn
 }
 ```
-⋅⋅⋅because using a chained .something.something will add more weight to the specificity.
+-- because using a chained .something.something will add more weight to the specificity.
+
 - line 33 looks like you don’t need that comment anymore
 - generally, don’t add extra lines of space unless there is a very obvious reason you’re doing so. In this case, it doesn’t seem to have a consistent rule so I would just eliminate all extra blank lines
 
